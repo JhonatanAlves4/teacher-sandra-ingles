@@ -1,0 +1,10 @@
+.header {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 1rem;
+  z-index: 9999;
+  background-image: url("../../assets/grabretanha.avif");
+  background-position: center;
+  background-size: contain;
+}

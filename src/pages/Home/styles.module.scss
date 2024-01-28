@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Playpen+Sans:wght@600&display=swap");
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, #f4e4e9, #f3d6df);
+
+  .leftBox {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    width: 30vw;
+
+    svg {
+      position: absolute;
+      width: 1000px;
+      top: -200px;
+      left: -200px;
+      z-index: 0;
+    }
+    .image {
+      position: absolute;
+      top: 100px;
+      left: 100px;
+      width: 20rem;
+      height: 20rem;
+      background-image: url("../../assets/English\ teacher-amico.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  .titleBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 25rem;
+    width: 80rem;
+    z-index: 9999;
+
+    .subtitles {
+      font-size: 40px;
+      color: #c87273;
+      font-family: "Playpen Sans", cursive;
+    }
+
+    .title {
+      font-size: 75px;
+      color: #353d7e;
+      font-family: "Playpen Sans", cursive;
+    }
+
+    .paragraph {
+      font-size: 30px;
+      color: #353d7e;
+      margin-top: 2rem;
+      font-family: "Lobster", sans-serif;
+    }
+  }
+
+  .rightBox {
+    display: flex;
+    height: 100vh;
+    align-items: flex-end;
+    width: 30vw;
+
+    svg {
+      position: absolute;
+      width: 700px;
+      top: 400px;
+      right: -50px;
+      z-index: 0;
+    }
+    @media screen and (max-height: 850px) {
+      svg {
+        top: 200px;
+      }
+    }
+    .image {
+      position: absolute;
+      bottom: 100px;
+      right: 100px;
+      width: 20rem;
+      height: 20rem;
+      background-image: url("../../assets/Webinar-amico.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.section2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  width: 100vw;
+  height: 70vh;
+  background: linear-gradient(180deg, #f3d6df, #f2c6d4);
+
+  .leftBox {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    width: 30vw;
+
+    svg {
+      position: absolute;
+      width: 1000px;
+      top: -200px;
+      left: -200px;
+      z-index: 0;
+    }
+    .image {
+      position: absolute;
+      top: 100px;
+      left: 100px;
+      width: 20rem;
+      height: 20rem;
+      background-image: url("../../assets/English\ teacher-amico.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  .titleBox {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100rem;
+    z-index: 999;
+
+    .profilePhoto {
+      display: flex;
+      min-width: 200px;
+      min-height: 200px;
+      border-radius: 20px;
+      background-image: url("../../assets/sandra.jpeg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .texts {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      height: 500px;
+      box-sizing: border-box;
+      justify-content: flex-start;
+
+      .subtitles {
+        font-size: 30px;
+        color: #c87273;
+        margin-bottom: 4rem;
+        font-family: "Playpen Sans", cursive;
+      }
+
+      .title {
+        font-size: 40px;
+        color: #353d7e;
+        font-family: "Playpen Sans", cursive;
+      }
+
+      .paragraph {
+        font-size: 20px;
+        color: #353d7e;
+        margin-top: 2rem;
+        font-family: "Lobster", sans-serif;
+      }
+    }
+  }
+
+  .rightBox {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    width: 30vw;
+
+    svg {
+      position: absolute;
+      width: 1000px;
+      top: 300px;
+      right: -200px;
+      z-index: 0;
+    }
+    .image {
+      position: absolute;
+      bottom: 100px;
+      right: 100px;
+      width: 20rem;
+      height: 20rem;
+      background-image: url("../../assets/Webinar-amico.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .section2 .leftBox,
+  .section2 .rightBox {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .section .leftBox,
+  .section .rightBox {
+    display: none;
+  }
+
+  .section2 .titleBox {
+    flex-direction: column;
+  }
+
+  .profilePhoto {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section2 {
+    height: 90vh;
+  }
+  
+  .section2 .titleBox .texts .subtitles {
+    padding: 10px;
+    font-size: 25px;
+  }
+
+  .section2 .titleBox .texts .title {
+    padding: 10px;
+    font-size: 30px;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .section .titleBox .subtitles {
+    padding: 10px;
+    font-size: 25px;
+  }
+
+  .section .titleBox .title {
+    padding: 10px;
+    font-size: 50px;
+  }
+  .section .titleBox .paragraph {
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .section2 {
+    height: 90vh;
+    background-color: green;
+  }
+
+  .section2 .titleBox .texts .subtitles {
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  .section2 .titleBox .texts .title {
+    padding: 10px;
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .section2 .titleBox {
+    height: 110vh;
+  }
+
+  .section2 .titleBox .texts .subtitles {
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .section2 .titleBox .texts .title {
+    padding: 10px;
+    font-size: 20px;
+  }
+}
